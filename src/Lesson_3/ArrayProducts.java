@@ -13,41 +13,8 @@ public class ArrayProducts {
 
         System.out.println(Arrays.toString(appliances));
     }
-
-    static class Product {
-        String productName;
-        String productDate;
-        String manufacturer;
-        String countryOfOrigin;
-        int price;
-        boolean available;
-
-        public Product(String productName,
-                       String productDate,
-                       String manufacturer,
-                       String countryOfOrigin,
-                       int price,
-                       boolean available) {
-
-            this.productName = productName;
-            this.productDate = productDate;
-            this.manufacturer = manufacturer;
-            this.countryOfOrigin = countryOfOrigin;
-            this.price = price;
-            this.available = available;
-        }
-
-        @Override
-        public String toString() {
-            return productName + ", "
-                    + productDate + ", "
-                    + manufacturer + ", "
-                    + countryOfOrigin + ","
-                    + price + ", "
-                    + available;
-        }
-    }
 }
+
 
 
 

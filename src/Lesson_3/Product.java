@@ -33,20 +33,4 @@ public class Product {
                         "Reserved: " + reserved
         );
     }
-
-    public static void main(String[] args) {
-
-        Product product1 = new Product(
-                "Fridge",
-                "01.01.2026",
-                "Bosch",
-                "China",
-                1000,
-                true
-        );
-
-        product1.printInfo();
-    }
 }
-
-
