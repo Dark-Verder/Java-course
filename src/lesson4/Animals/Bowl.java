@@ -21,4 +21,8 @@ public class Bowl {
     public int getFood() {
         return food;
     }
+
+    public void info() {
+        System.out.println("Food in bowl: " + food);
+    }
 }

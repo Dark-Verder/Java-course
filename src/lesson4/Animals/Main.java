@@ -6,15 +6,16 @@ public class Main {
 
         Bowl bowl = new Bowl(50);
 
-        Cat cat1 = new Cat("Fenix", 40);
-        Cat cat2 = new Cat("Boss", 20);
+        Cat cat1 = new Cat("Fenix");
+        Cat cat2 = new Cat("Boss");
 
         Dog dog1 = new Dog("Loor");
         Dog dog2 = new Dog("Bucks");
 
         Cat[] cats = {cat1, cat2};
+
         for (Cat cat : cats) {
-            cat.eat(bowl);
+            cat.eat(bowl, 20);
         }
 
         System.out.println("Food left in bowl: " + bowl.getFood());
@@ -22,7 +23,7 @@ public class Main {
         bowl.addFood(30);
         System.out.println("Added food to bowl.");
 
-        cat2.eat(bowl);
+        cat2.eat(bowl, 15);
 
         System.out.println("Food in bowl now: " + bowl.getFood());
 

@@ -4,19 +4,16 @@ public class Cat extends Animal {
 
     public static int catCount;
 
-    private int appetite;
     private boolean satiety;
 
-    public Cat(String name, int appetite) {
+    public Cat(String name) {
         super(name, 200, 0);
-        this.appetite = appetite;
         this.satiety = false;
         catCount++;
     }
 
-    public void eat(Bowl bowl) {
-        if (bowl.getFood() >= appetite) {
-            bowl.decrease(appetite);
+    public void eat(Bowl bowl, int foodAmount) {
+        if (bowl.getFood() >= foodAmount) {
             satiety = true;
             System.out.println(name + " ate.");
         } else {
